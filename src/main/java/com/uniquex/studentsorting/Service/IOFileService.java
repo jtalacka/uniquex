@@ -28,7 +28,7 @@ public class IOFileService {
         return null;
     }
 
-    public void writeToFile(String url, List<String> data) {
+    public void writeToFile(List<String> data, String url) {
         Path output = Paths.get(url);
         try {
             Files.write(output, data);

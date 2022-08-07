@@ -1,7 +1,5 @@
 package com.uniquex.studentsorting.Model;
 
-import java.util.Comparator;
-
 public class UserData implements Comparable<UserData> {
     private String name;
     private double data;
@@ -26,8 +24,9 @@ public class UserData implements Comparable<UserData> {
     public int compareTo(UserData userData) {
         return Double.compare(this.data, userData.getData());
     }
-    public String toString()
-    {
-        return name+","+data;
+
+    public String toString() {
+        return name + "," + data;
     }
+
 }

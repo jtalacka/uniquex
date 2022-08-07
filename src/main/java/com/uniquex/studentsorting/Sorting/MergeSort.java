@@ -1,13 +1,10 @@
 package com.uniquex.studentsorting.Sorting;
 
-import com.uniquex.studentsorting.Model.UserData;
-
 import java.util.List;
 
-public class MergeSort implements ISort{
+public class MergeSort implements ISort {
     @Override
     public <T extends Comparable<T>> List<T> sort(List<T> list) {
-
-        return null;
+        throw new RuntimeException("This sort is not implemented");
     }
 }
